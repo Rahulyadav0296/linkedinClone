@@ -1,0 +1,70 @@
+/* Align and style the profile link */
+.profile-link {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adds space between image and arrow */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Profile image styling */
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff6600; /* Border around the image */
+}
+
+/* Arrow alignment */
+.dropdown-arrow {
+  font-size: 24px; /* Adjust arrow size */
+  color: #000;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  z-index: 100;
+}
+
+.nav-link {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #ff6600;
+  color: white;
+}
+
+/* Styling the logout button */
+.nav-link-logout {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-link-logout:hover {
+  background-color: #e65c00;
+}
+
+/* Dropdown toggle area styling */
+.dropdown-toggle-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}

@@ -1,0 +1,6 @@
+.content {
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px; /* Add some padding if necessary */
+}

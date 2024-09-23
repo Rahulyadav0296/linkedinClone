@@ -1,0 +1,29 @@
+.container {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.loading-message,
+.error-message {
+  color: red;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 12px;
+    font-size: 0.9em;
+  }
+}

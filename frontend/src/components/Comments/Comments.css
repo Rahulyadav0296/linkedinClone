@@ -1,0 +1,123 @@
+/* Container styling for the comment section */
+.comment-container {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Button styling to toggle comments */
+.toggle-comments-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%; /* Full width button */
+  justify-content: space-between; /* Space between icon and text */
+}
+
+/* Comment icon styling */
+.comment-icon {
+  margin-right: 8px;
+}
+
+/* Styling for the comment section */
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Full width */
+}
+
+/* Styling for the comment form */
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.submit-button {
+  padding: 10px;
+  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #017c2a;
+}
+
+/* Styling for the comments list */
+.comments-list {
+  margin-top: 10px;
+}
+
+.comment-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.comment-date {
+  color: #777;
+  font-size: 14px;
+}
+
+.comment-text {
+  margin: 0;
+}
+
+/* No comments styling */
+.no-comments {
+  color: #888;
+  font-style: italic;
+}
+
+/* Mobile responsive design */
+@media only screen and (max-width: 768px) {
+  .comment-section {
+    padding: 8px;
+  }
+
+  .toggle-comments-button {
+    font-size: 14px;
+  }
+
+  .comment-input {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .comment-icon {
+    font-size: 20px;
+    margin-right: 6px;
+  }
+
+  .comment-date {
+    font-size: 12px;
+  }
+}

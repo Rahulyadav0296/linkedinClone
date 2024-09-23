@@ -1,0 +1,112 @@
+/* FeedDetails.css */
+
+/* General styles */
+.post-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px auto;
+  max-width: 600px;
+  background-color: #fff;
+}
+
+.post-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.post-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-content {
+  text-align: left;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.like-count {
+  margin-bottom: 10px;
+}
+
+.comments-section {
+  margin-bottom: 10px;
+}
+
+.post-date {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Interaction section for like and comments */
+.interaction-section {
+  display: flex;
+  flex-direction: column; /* Stack like and comment sections vertically */
+  align-items: flex-start; /* Align items to the start */
+  width: 100%;
+}
+
+.interaction-section > * {
+  margin-bottom: 10px; /* Space between like button and comment section */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .post-container {
+    padding: 10px;
+  }
+
+  .post-card {
+    padding: 12px;
+  }
+
+  .post-content {
+    font-size: 14px;
+  }
+
+  .post-date {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feed-container {
+    padding: 5px;
+  }
+
+  .post-card {
+    padding: 8px;
+  }
+
+  .post-content {
+    font-size: 12px;
+  }
+
+  .post-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .like-count,
+  .comments-section {
+    font-size: 14px;
+  }
+
+  .post-date {
+    font-size: 10px;
+  }
+}

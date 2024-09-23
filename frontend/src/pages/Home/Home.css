@@ -1,0 +1,67 @@
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  margin: 30px;
+}
+
+/* Styling for the welcome message */
+.welcome-message {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem; /* Larger font size for impact */
+  color: #333; /* Dark gray text for readability */
+  background-color: transparent; /* White background for contrast */
+  padding: 20px 40px; /* Space around the text */
+  border-radius: 12px; /* Rounded corners for smooth design */
+  text-align: center; /* Center text within the element */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Highlight the dynamic account name */
+.welcome-message span {
+  color: #09ac83; /* Blue color for the account name */
+  font-weight: bold; /* Make the account name stand out */
+}
+
+/* Hover effect */
+.welcome-message:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  color: black;
+  border-radius: 100%;
+  align-items: center;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .carousel {
+    width: calc(100% - 20px); /* Full width minus margin */
+    margin: 10px auto; /* Margin adjusted for mobile, ensuring some space around */
+  }
+
+  .carousel-button {
+    font-size: 1.5rem;
+    width: 40px; /* Increased size for better touch interaction */
+    height: 40px; /* Increased size for better touch interaction */
+    line-height: 40px; /* Center text vertically */
+  }
+}

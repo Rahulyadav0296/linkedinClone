@@ -1,0 +1,56 @@
+.like-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Button styling */
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  position: relative; /* Ensure the button stays in place */
+}
+
+/* Icon styling */
+.like-icon {
+  margin-right: 8px;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.liked {
+  color: red;
+  transform: scale(1.2);
+}
+
+/* Count styling */
+.likes-count {
+  font-size: 16px;
+  color: #333;
+  margin-left: 5px;
+}
+
+/* Mobile responsive design */
+@media only screen and (max-width: 768px) {
+  .like-container {
+    padding: 8px;
+  }
+
+  .like-button {
+    font-size: 14px;
+  }
+
+  .like-icon {
+    font-size: 20px;
+    margin-right: 6px;
+  }
+
+  .likes-count {
+    font-size: 14px;
+  }
+}

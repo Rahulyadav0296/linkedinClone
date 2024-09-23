@@ -1,0 +1,81 @@
+/* Navbar Styling */
+.navbar {
+  background-color: white; /* Black and orange gradient */
+  border-bottom: 2px solid #ff6600; /* Orange border */
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-nav .nav-item {
+  margin-bottom: 0.5rem; /* Adjust spacing as needed */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff; /* White text color for links */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ff6600; /* Orange color on hover */
+}
+
+.navbar-dark .navbar-brand img {
+  border-radius: 10px;
+}
+
+.navbar-toggler {
+  border-color: #ff6600; /* Orange border for the toggle button */
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23ff6600" stroke-width="2" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E');
+}
+
+.dropdown-menu {
+  background-color: #333; /* Black background for dropdown */
+  border: 1px solid #ff6600; /* Orange border for dropdown */
+}
+
+.dropdown-item {
+  color: #ffffff; /* White text color for dropdown items */
+}
+
+.dropdown-item:hover {
+  background-color: #ff6600; /* Orange background on hover */
+  color: #ffffff; /* White text color on hover */
+}
+
+.nav-item {
+  color: white;
+}
+
+.nav-link-logout {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+}
+
+.nav-link {
+  padding: 5px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.home-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 1rem; /* Ensure there's adequate spacing */
+  }
+}
